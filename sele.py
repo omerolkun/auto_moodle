@@ -9,6 +9,7 @@ print(driver.title)
 
 sleep(1)
 
+
 username = driver.find_element(By.ID, 'LoginForm_username')
 
 username.send_keys("21100999")
@@ -19,6 +20,20 @@ p[1].send_keys("c717343")
 
 
 driver.find_element_by_name("yt0").click()
+sleep(1)
+
+confirmation_code = driver.find_element_by_id("EmailVerifyForm_verifyCode")
+
+confirmation_code.send_keys(read_mails("omer.olkun@ug.bilkent.edu.tr","b101557")[1])
+
+driver.find_element_by_name("yt0").click()# confirmation code submit
+
+
+
+
+
+
+
 
 #driver.close()
 
