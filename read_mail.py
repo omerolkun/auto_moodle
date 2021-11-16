@@ -40,7 +40,7 @@ def read_mails(u,p):
     elif words[0] == "Verification":
         return (words[-1][:-1], words[2])
 
-    return email.message_from_string(mes).get_payload().split()[2]
+    return words[2]
 
 
 print(read_mails("omer.olkun@ug.bilkent.edu.tr","b101557"))
