@@ -3,8 +3,14 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from time import sleep
+from selenium.webdriver import ChromeOptions
+
 from credits import id, moodle_p, mail_adr, mail_p
-driver = webdriver.Chrome()
+
+options = ChromeOptions()
+options.add_argument("--start-maximized")
+
+driver = webdriver.Chrome(options=options)
 driver.get("https://stars.bilkent.edu.tr/srs")
 #print(driver.title)
 
@@ -24,6 +30,8 @@ driver.find_element_by_name("yt0").click()
 sleep(1)
 
 confirmation_code = driver.find_element_by_id("EmailVerifyForm_verifyCode")
+
+
 
 confirmation_code.send_keys(read_mails(mail_adr,mail_p)[1])
 
