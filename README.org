@@ -3,9 +3,11 @@
 * USAGE
 
 Run with Python3.
+
 It uses your e-mail, Bilkent student ID, e-mail password and SRS password and authenticates to SRS
 with selenium. It only works with Bilkent mail. You also should be already receiving your
 verification code as e-mail.
+
 In order to use it, you should provide a *credits.py* file containing your login information. It
 should contain the following variables:
 
