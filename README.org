@@ -18,3 +18,5 @@ mail_p = "YOUR_MAIL_PASSWORD"
 id = "YOUR_STUDENT_ID"
 moodle_p = "YOUR_SRS_PASSWORD"
 #+END_SRC
+
+In order to run without modifications, you should have chrome installed and computable chromedriver should be located on your path.
