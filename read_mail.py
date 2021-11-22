@@ -43,4 +43,8 @@ def read_mails(u,p):
     return words[2]
 
 
+<<<<<<< HEAD
 print(read_mails("omer.olkun@ug.bilkent.edu.tr","b101557"))
+=======
+
+>>>>>>> 5d14e79993b297fddab48d82842623de8a4f73e5

@@ -1,0 +1,29 @@
+
+
+* USAGE
+
+Run with Python3.
+
+Example:
+#+BEGIN_SRC bash
+python3 auto_moodle.py
+#+END_SRC
+
+It uses your e-mail, Bilkent student ID, e-mail password and SRS password and authenticates to SRS
+with selenium. It only works with Bilkent mail. You also should be already receiving your
+verification code as e-mail.
+
+In order to use it, you should provide a *credits.py* file containing your login information. It
+should contain the following variables:
+
+#+BEGIN_SRC python
+mail_adr = "YOUR_BILKENT_EMAIL_ADDRESS"
+mail_p = "YOUR_MAIL_PASSWORD"
+
+id = "YOUR_STUDENT_ID"
+moodle_p = "YOUR_SRS_PASSWORD"
+#+END_SRC
+
+In order to run without modifications, you should have Chrome installed and computable chromedriver should be located on your path.
+
+It is possible to define a keybinding for the program and easily call it.
